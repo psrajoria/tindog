@@ -8,6 +8,14 @@ body {
   color: #fff;
 }
 
+
+@media (max-width: 900px) {
+  h1{
+    color: pink;
+  }
+
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -26,7 +34,7 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15% !important;
+  padding: 3% 15% 7% !important;
 }
 
 p {
@@ -59,10 +67,28 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+
+}
+
+@media (max-width:1024px) {
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    transform: rotate(0deg);
+    position: static;
+  }
+
 }
 
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+
 }
 
 .feature-box {
@@ -112,4 +138,27 @@ p {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-sec{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem ;
+  line-height: 1.5;
+}
+
+#footer{
+padding: 7% 15%;
+text-align: center;
+}
+
+.social_icon{
+
+  margin:   20px 10px;
 }
